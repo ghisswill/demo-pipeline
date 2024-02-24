@@ -12,11 +12,9 @@ pipeline{
                 cleanws()
             }
         }
-    }
-    stages{
         stage("checkout from SCM){
             steps{
-                git branch: 'main', credentialsIds: '', url: 'https://github.com/ghisswill/demo-pipeline'
+                git branch: 'main', credentialsIds: 'github', url: 'https://github.com/ghisswill/demo-pipeline'
             }
         }
     }
