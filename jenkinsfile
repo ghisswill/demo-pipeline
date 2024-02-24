@@ -1,0 +1,23 @@
+pipeline{
+    agent{
+        label "node"
+    }
+    tools {
+        jdk 'java17'
+        maven 'maven3'
+    }
+    stages{
+        stage("cleanup workspace"){
+            steps{
+                cleanws()
+            }
+        }
+    }
+    stages{
+        stage("checkout from SCM){
+            steps{
+                git branch: 'main', credentialsIds: '', url: 'https://github.com/ghisswill/demo-pipeline'
+            }
+        }
+    }
+}
