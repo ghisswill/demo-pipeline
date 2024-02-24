@@ -14,7 +14,7 @@ pipeline{
         }
         stage("checkout from SCM"){
             steps{
-                git branch: 'main', credentialsIds: 'github', url: 'https://github.com/ghisswill/demo-pipeline'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/ghisswill/demo-pipeline'
             }
         }
     }
