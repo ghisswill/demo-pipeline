@@ -12,7 +12,7 @@ pipeline{
                 cleanws()
             }
         }
-        stage("checkout from SCM){
+        stage("checkout from SCM"){
             steps{
                 git branch: 'main', credentialsIds: 'github', url: 'https://github.com/ghisswill/demo-pipeline'
             }
