@@ -15,5 +15,15 @@ pipeline{
                 git branch: 'main', credentialsId: 'github', url: 'https://github.com/ghisswill/demo-pipeline'
             }
         }
+        stage("build application"){
+            steps{
+                sh "mvn clean package"
+            }
+        }
+        stage("test application"){
+            steps{
+                sh "vn test"
+            }
+        }
     }
 }
