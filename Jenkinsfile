@@ -34,5 +34,12 @@ pipeline{
             }
             }
         }
+        tage("Guality Gate"){
+            steps{
+                script{
+                    waitForQualityGate abortPipeline: 'jenkins-sonarqube-token'
+                }
+            }
+        }
     }
 }
