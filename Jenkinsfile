@@ -34,7 +34,7 @@ pipeline{
             }
             }
         }
-        tage("Guality Gate"){
+        stage("Guality Gate"){
             steps{
                 script{
                     waitForQualityGate abortPipeline: 'jenkins-sonarqube-token'
