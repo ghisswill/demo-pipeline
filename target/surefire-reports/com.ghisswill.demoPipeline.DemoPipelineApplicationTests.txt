@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ghisswill.demoPipeline.DemoPipelineApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.198 s -- in com.ghisswill.demoPipeline.DemoPipelineApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.912 s -- in com.ghisswill.demoPipeline.DemoPipelineApplicationTests
